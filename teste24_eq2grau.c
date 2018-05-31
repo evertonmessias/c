@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
 void equacao_2o_grau (float a, float b, float c, float *x1, float *x2) {
@@ -17,6 +16,4 @@ main () {
     scanf ("%f", & c);
     equacao_2o_grau (a,b,c,&x1,&x2);
     printf ("\n\nx1 = %.2f e x2 = %.2f\n\n",x1,x2);
-    system ("pause");
-    return 0;
     }
