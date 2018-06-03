@@ -8,6 +8,4 @@ int main () {
     printf ("%d\n",letra);
     printf ("%d\n",num);
     printf ("%.2f\n",real);
-    system ("pause");
-    return 0;
-    }
+    system ("pause");}

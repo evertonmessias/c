@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-int main () {
-printf ("Hello world!\n");
-system ("pause");
-return 0;
-}
+#include <stdio.h> /* Biblioteca de entrada e saída (teclado/vídeo) */
+#include <stdlib.h> /* Biblioteca para usar a função system() */
+main () { /* Função Principal, sem retorno - VOID */
+printf ("Hello world!\n\n"); /* Função printf() - escrita */
+system ("pause"); /* Função system() - executa um comando do SO */}

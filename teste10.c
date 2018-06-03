@@ -12,9 +12,9 @@ main()
     Aluno dado[MAX]; 	// declarando variável dado[MAX] do TIPO struct aluno
     int i;
     for (i=0;i<MAX;i++){
-    fflush(stdin);
+    __fpurge(stdin);
     printf ("\nDigite o nome do aluno %d : ", i+1);
-    gets (dado[i].nome);
+    fgets (dado[i].nome,30,stdin);
     printf ("\nDigite a idade do aluno %d : ", i+1);
     scanf ("%d", & dado[i].idade);
     }
