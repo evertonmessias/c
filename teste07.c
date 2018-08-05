@@ -1,11 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
 int main () {
-    int i=0;
-    do {
-    printf ("%d\n",i);
-    i++;
-    }while (i>0); // loop infinito
-    system ("pause");
-    return 0;
+
+    int num,fat=1;
+
+    printf("Digite um numero: ");
+    scanf("%d",&num);
+
+    if (num == 0){
+    printf("\nFatorial: %d ",fat);
+    }else{
+
+    while(num > 0){
+    fat = fat * num;
+    num--;
     }
+    printf("\nFatorial: %d ",fat);
+    }
+}
