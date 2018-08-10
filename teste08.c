@@ -1,20 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main () {
-    int mat [3][4],i,j;
-    for (i=0;i<3;i++){
-        for (j=0;j<4;j++){
-            printf ("Digite um numero para mat[%d][%d]\n",i,j);
-            scanf ("%d",&mat[i][j]);
-        }
-    }
-    printf("\n\n\n");
-    for (i=0;i<3;i++){
-        for (j=0;j<4;j++){
-            printf ("%d ",mat[i][j]);
-        }
-        printf ("\n");
-    }
+    int i;
+    do {
+    system ("cls");
+    printf ("Escolha uma Opcao:\n\n");
+    printf ("(1) Opcao 1\n");
+    printf ("(2) Opcao 2\n");
+    printf ("(3) Opcao 3\n");
+    scanf ("%d", &i);
+    }while ((i < 1) || (i > 3));
+    printf ("Voce escolheu a Opcao %d\n\n",i);
     system ("pause");
     return 0;
     }

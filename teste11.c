@@ -1,6 +1,12 @@
-# include <stdio.h>
-enum escapes {retrocesso='\b',tabulacao='\t',novalinha='\n'};
-main(){
-    enum escapes e = novalinha;
-    printf ("Everton%cMendes%cMessias%c",e,e,e);
-    system ("pause");return 0;}
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+main () {
+    char palavra[20];
+    printf ("\nDigite uma palavra: ");
+    //scanf ("%s", palavra); - uma palavra apenas ate o enter
+    gets (palavra); // frases inteiras até o enter
+    printf ("\n\n%s\n\n",palavra);
+    system ("pause");
+    return 0;
+    }
