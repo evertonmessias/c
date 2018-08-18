@@ -29,7 +29,7 @@ h1{margin-left:0px;}
 <body>
 <div id="site">
 <header>
-<hgroup><h2>Algoritmos C</h2></hgroup>
+<hgroup><h2>Scratch</h2></hgroup>
 <nav>
 <fieldset><legend><h4>Downloads</h4></legend>
 
@@ -38,7 +38,7 @@ $dir = './';
 $files = scandir($dir);
  
 foreach ($files as $file) {
-	if($file != "index.php~" && $file != "index.php" && $file != "." && $file != "..") {
+	if($file != "index.php" && $file != "." && $file != "..") {
    echo "<a href='".$dir.$file."'>".$file."</a><br />";
    }
 }

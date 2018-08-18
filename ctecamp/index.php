@@ -38,7 +38,7 @@ $dir = './';
 $files = scandir($dir);
  
 foreach ($files as $file) {
-	if($file != "index.php~" && $file != "index.php" && $file != "." && $file != "..") {
+	if($file != "index.php~" && $file != "index.php" && $file != "." && $file != ".." && $file != "prova") {
    echo "<a href='".$dir.$file."'>".$file."</a><br />";
    }
 }
